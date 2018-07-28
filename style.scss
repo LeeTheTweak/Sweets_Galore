@@ -4,6 +4,7 @@ $Batter: #ebe6e6;
 $Text: #785c5c;
 $Threading: #eeb493;
 $PinkBerry: #e46e7f;
+$BlueBerry: #84b3ff;
 
 body {
   width: 100%;
@@ -107,7 +108,7 @@ body {
   background-position: top;
 }
 #contents {
-  width: auto;
+  width: 100%;
   height: auto;
   margin: 0;
 
@@ -127,7 +128,38 @@ body {
     p {
       color: $Text;
       font-family: times;
-      font-size: 30px;
+      font-size: 25px;
     }
   }
+  #area2 {
+    text-align: center;
+    color: $Text;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: $BlueBerry;
+    padding: 1px;
+    
+    li {
+      list-style-type: none;
+      display: inline-block;
+      padding-right: 20px;
+    }
+  }
+}
+#footer {
+  width: auto;
+  height: auto;
+  padding: 1px;
+  background-color: #99ff84;
+  text-align: center;
+  
+  li {
+    list-style-type: none;
+    padding-right: 10px;
+    display: inline-block;
+    img {
+      width: 50px;
+    }
+  }
+  color: $Text;
 }

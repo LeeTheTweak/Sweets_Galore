@@ -79,7 +79,7 @@ body {
   background-position: top; }
 
 #contents {
-  width: auto;
+  width: 100%;
   height: auto;
   margin: 0; }
   #contents #area1 {
@@ -96,6 +96,31 @@ body {
     #contents #area1 p {
       color: #785c5c;
       font-family: times;
-      font-size: 30px; }
+      font-size: 25px; }
+  #contents #area2 {
+    text-align: center;
+    color: #785c5c;
+    font-size: 40px;
+    font-weight: bold;
+    background-color: #84b3ff;
+    padding: 1px; }
+    #contents #area2 li {
+      list-style-type: none;
+      display: inline-block;
+      padding-right: 20px; }
+
+#footer {
+  width: auto;
+  height: auto;
+  padding: 1px;
+  background-color: #99ff84;
+  text-align: center;
+  color: #785c5c; }
+  #footer li {
+    list-style-type: none;
+    padding-right: 10px;
+    display: inline-block; }
+    #footer li img {
+      width: 50px; }
 
 /*# sourceMappingURL=style.css.map */
