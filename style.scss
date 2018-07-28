@@ -1,0 +1,133 @@
+$Peach: #fcefe3;
+$Banana: #dec732;
+$Batter: #ebe6e6;
+$Text: #785c5c;
+$Threading: #eeb493;
+$PinkBerry: #e46e7f;
+
+body {
+  width: 100%;
+  padding: 0px;
+  margin: 0px;
+  background-color: #d2d2d2;
+}
+
+#header {
+  width: 100%;
+  background-color: $Peach;
+  padding: 1px;
+  border-top: 4px dashed $Threading;
+  border-bottom: 4px dashed $Threading;
+  height: auto;
+  /*box-shadow: 1px 1px 4px black;*/
+  position: fixed;
+
+  #companyName {
+    font-size: 70px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: $PinkBerry;
+    text-shadow: 1px 1px 5px black;
+    display: inline-block;
+    padding-right: 170px;
+  }
+  #logo {
+    display: inline-block;
+    float: left;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+
+    img {
+      width: 60%;
+    }
+  }
+  #nav {
+    float: right;
+    margin-top: 30px;
+
+    label {
+      clear: right;
+      margin: 0 40px 0 0;
+      font-size: 34px;
+      line-height: 70px;
+      display: none;
+      float: right;
+      width: 34px;
+    }
+    #toggle {
+      display: none;
+    }
+    @media only screen and (max-width:400px) {
+      label {
+        display: block;
+        cursor: pointer;
+      }
+      #toggledNav {
+        text-align: center;
+        width: 100%;
+        display: none;
+
+        li {
+          display: inline-block;
+          padding-bottom: 5px;
+          margin: 0;
+        }
+     }
+        #toggle:checked + #toggledNav {
+          display: block;
+  }
+
+}
+    li {
+      list-style-type: none;
+      display: inline-block;
+      padding-right: 20px;
+      font-size: 21px;
+      font-weight: bold;
+      font-family: sans-serif;
+
+      a {
+        text-decoration: none;
+        color: $PinkBerry;
+        &:hover {
+          border-bottom: 2px dashed $Banana;
+        }
+      }
+    }
+  }
+}
+#banner {
+  width: auto;
+  padding-top: 250px;
+  height: 400px;
+  background-image: url("photos/bannerImage.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
+}
+#contents {
+  width: auto;
+  height: auto;
+  margin: 0;
+
+  #area1 {
+    padding: 10px;
+    background-color: $Batter;
+    text-align: center;
+    h2 {
+      font-family: times;
+      text-transform: uppercase;
+      color: $Text;
+    }
+    h1 {
+      color: $PinkBerry;
+      font-family: times;
+    }
+    p {
+      color: $Text;
+      font-family: times;
+      font-size: 30px;
+    }
+  }
+}
