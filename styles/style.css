@@ -88,8 +88,8 @@ body {
 #banner {
   width: auto;
   padding-top: 250px;
-  height: 400px;
-  background-image: url("photos/bannerImage.jpg");
+  height: 600px;
+  background-image: url("../photos/bannerImage.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;

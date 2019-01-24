@@ -1,0 +1,159 @@
+$Peach: #fcefe3;
+$Banana: #dec732;
+$Batter: #ebe6e6;
+$Text: #785c5c;
+$Threading: #eeb493;
+$PinkBerry: #e46e7f;
+$BlueBerry: #84b3ff;
+
+body {
+    width: 100%;
+    padding: 0px;
+    margin: 0px;
+    background-color: #d2d2d2;
+  }
+// The Header
+  #header {
+    width: 100%;
+    background-color: $Peach;
+    padding: 1px;
+    border-top: 4px dashed $Threading;
+    border-bottom: 4px dashed $Threading;
+    height: auto;
+    /*box-shadow: 1px 1px 4px black;*/
+    position: fixed;
+  
+    #companyName {
+      font-size: 5vw;
+      font-family: sans-serif;
+      font-weight: bold;
+      color: $PinkBerry;
+      text-shadow: 1px 1px 5px black;
+      display: inline-block;
+      padding-right: 170px;
+    }
+    #logo {
+      display: inline-block;
+      float: left;
+      text-align: center;
+      margin: 0;
+      padding: 0;
+  
+      img {
+        width: 8vw;
+      }
+    }
+    #nav {
+      float: right;
+      margin-top: 30px;
+  
+      label {
+        clear: right;
+        margin: 0 40px 0 0;
+        font-size: 34px;
+        line-height: 70px;
+        display: none;
+        float: right;
+        width: 34px;
+      }
+      #toggle {
+        display: none;
+      }
+      @media only screen and (max-width:400px) {
+        label {
+          display: block;
+          cursor: pointer;
+        }
+        #toggledNav {
+          text-align: center;
+          width: 100%;
+          display: none;
+  
+          li {
+            display: inline-block;
+            padding-bottom: 5px;
+            margin: 0;
+          }
+       }
+          #toggle:checked + #toggledNav {
+            display: block;
+    }
+  
+  }
+      li {
+        list-style-type: none;
+        display: inline-block;
+        padding-right: 20px;
+        font-size: 21px;
+        font-weight: bold;
+        font-family: sans-serif;
+  
+        a {
+          text-decoration: none;
+          color: $PinkBerry;
+          &:hover {
+            border-bottom: 2px dashed $Banana;
+          }
+        }
+      }
+      .active {
+        border-bottom: 2px dashed $Banana;
+      }
+    }
+  }
+  /******************************************/
+  
+  // The Jumbotron Area
+
+.jumbotron {
+    background-image: url("../photos/candyBG.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 500px;
+
+    .display-4 {
+        margin-top: 125px;
+        font-size: 80pt;
+        font-family: times, sans-serif;
+        color: $Peach;
+        text-shadow: 1px 1px 10px white;
+    }
+    @media only screen and (max-width: 400px) {
+        .display-4 {
+            text-align: center;
+        }
+    }
+}
+
+// The Contents
+#contents1 {
+    width: auto;
+    padding: 5px;
+    margin-top: -50px;
+    background-color: $Peach;
+    color: $PinkBerry;
+    
+    h1 {
+        text-align: center;
+    }
+}
+
+// The Footer
+#footer {
+  width: auto;
+  height: auto;
+  padding: 1px;
+  background-color: #99ff84;
+  text-align: center;
+
+  li {
+    list-style-type: none;
+    padding-right: 10px;
+    display: inline-block;
+    img {
+      width: 50px;
+    }
+  }
+  color: $Text;
+}
+    
