@@ -24,7 +24,7 @@ body {
   position: fixed;
 
   #companyName {
-    font-size: 70px;
+    font-size: 5vw;
     font-family: sans-serif;
     font-weight: bold;
     color: $PinkBerry;
@@ -40,7 +40,7 @@ body {
     padding: 0;
 
     img {
-      width: 60%;
+      width: 7vw;
     }
   }
   #nav {
@@ -105,7 +105,7 @@ body {
   background-image: url("photos/bannerImage.jpg");
   background-repeat: no-repeat;
   background-size: cover;
-  background-position: top;
+  background-position: center;
 }
 #contents {
   width: 100%;
