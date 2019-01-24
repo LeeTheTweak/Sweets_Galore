@@ -14,7 +14,7 @@ body {
   /*box-shadow: 1px 1px 4px black;*/
   position: fixed; }
   #header #companyName {
-    font-size: 70px;
+    font-size: 5vw;
     font-family: sans-serif;
     font-weight: bold;
     color: #e46e7f;
@@ -28,7 +28,7 @@ body {
     margin: 0;
     padding: 0; }
     #header #logo img {
-      width: 60%; }
+      width: 8vw; }
   #header #nav {
     float: right;
     margin-top: 30px; }
@@ -68,46 +68,33 @@ body {
         color: #e46e7f; }
         #header #nav li a:hover {
           border-bottom: 2px dashed #dec732; }
+    #header #nav .active {
+      border-bottom: 2px dashed #dec732; }
 
-#banner {
-  width: auto;
-  padding-top: 250px;
-  height: 400px;
-  background-image: url("photos/bannerImage.jpg");
-  background-repeat: no-repeat;
+/******************************************/
+.jumbotron {
+  background-image: url("../photos/candyBG.jpg");
   background-size: cover;
-  background-position: top; }
+  background-repeat: no-repeat;
+  height: 500px; }
+  .jumbotron .display-4 {
+    margin-top: 125px;
+    font-size: 80pt;
+    font-family: times, sans-serif;
+    color: #fcefe3;
+    text-shadow: 1px 1px 10px white; }
+  @media only screen and (max-width: 400px) {
+    .jumbotron .display-4 {
+      text-align: center; } }
 
-#contents {
-  width: 100%;
-  height: auto;
-  margin: 0; }
-  #contents #area1 {
-    padding: 10px;
-    background-color: #ebe6e6;
+#contents1 {
+  width: auto;
+  padding: 5px;
+  margin-top: -50px;
+  background-color: #fcefe3;
+  color: #e46e7f; }
+  #contents1 h1 {
     text-align: center; }
-    #contents #area1 h2 {
-      font-family: times;
-      text-transform: uppercase;
-      color: #785c5c; }
-    #contents #area1 h1 {
-      color: #e46e7f;
-      font-family: times; }
-    #contents #area1 p {
-      color: #785c5c;
-      font-family: times;
-      font-size: 25px; }
-  #contents #area2 {
-    text-align: center;
-    color: #785c5c;
-    font-size: 40px;
-    font-weight: bold;
-    background-color: #84b3ff;
-    padding: 1px; }
-    #contents #area2 li {
-      list-style-type: none;
-      display: inline-block;
-      padding-right: 20px; }
 
 #footer {
   width: auto;
@@ -123,4 +110,4 @@ body {
     #footer li img {
       width: 50px; }
 
-/*# sourceMappingURL=style.css.map */
+/*# sourceMappingURL=about.css.map */
